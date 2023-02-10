@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+		<div class="logo">
+			<h1>
+				UNIVERSITY OF ILORIN
+			</h1>
+		</div>
+		<div>
+			<nav>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Notifications</a></li>
+					<li><a href="#">Results</a></li>
+					<li><a href="#">Apply Now</a></li>
+					<li><a href="#" id="login">Login</a></li>
+				</ul>	
+				<div class="menu-btn" onclick="toggleMenu()">
+						<div class="menu-btn-btn"></div>
+						<div class="menu-btn-btn"></div>
+						<div class="menu-btn-btn"></div>
+				</div>	
+			</nav>			
+		</div>
+	</header>
+
+<h1 style="text-align: center;" class="hh">School Managment Tool</h1>
+<div class="container">
+
+    <main>
+        <div class="left-section">
+            <img src="pexels.jpg" alt="">
+        </div>
+        <div class="right-section">
+            <form action="">
+                <h1>Login Portal</h1>
+               
+                <input type="text" name="username" id="username" required placeholder="Matric Number">
+                <br>
+                <div style="position: relative;">
+                    <input type="password"
+                    name="password" id="password" required placeholder="Password">
+                    <a id="lnkforget" class="hyperlink">Forget?</a>
+                </div>
+                
+                 <br>
+                <button class="form-btn">Login</button>
+               
+        </form>
+        <p>Create an account?</p>
+        </div>
+    </main>
+</div>
+
+<script type="text/javascript">
+    let meun = document.querySelector("ul");
+    let body = document.querySelector(".left-section");
+    let main = document.querySelector(".row")
+    // meun.style.height = "0px"
+    function toggleMenu(){
+        if (meun.style.height == "0px"){
+            meun.style.height  = "300px";
+            main.style.height = "700px"	;
+            body.style.marginTop = "190px"
+        }else{
+            meun.style.height = "0px";
+            main.style.height = "500px";
+            body.style.marginTop = "0px"
+        }
+        console.log(meun.style.height)
+    }
+</script>
+
+</body>
+</html>
